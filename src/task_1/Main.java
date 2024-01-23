@@ -6,6 +6,7 @@ public class Main {
         String docNumber = "2255-abC-4499-tUt-1o1o";
 
         DocumentNumberFormat.printTwoNumbersBlock(docNumber);
+        DocumentNumberFormat.hideBlockOfLetters(docNumber);
 
     }
 }

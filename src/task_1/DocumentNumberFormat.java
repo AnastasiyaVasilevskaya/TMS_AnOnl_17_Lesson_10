@@ -7,8 +7,12 @@ package task_1;
 //    - Вывести на экран буквы из номера документа в формате "Letters:yyy/yyy/y/y" в верхнем регистре
 //    (реализовать с помощью класса String Builder).
 public class DocumentNumberFormat {
-
     public static void printTwoNumbersBlock(String str) {
         System.out.println(str.substring(0, 4) + " " + str.substring(9, 13));
     }
+
+    public static void hideBlockOfLetters(String str) {
+        System.out.println(str.replaceAll("\\p{L}{3}", "***"));
+    }
+
 }
