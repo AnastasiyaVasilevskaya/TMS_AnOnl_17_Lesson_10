@@ -15,4 +15,14 @@ public class DocumentNumberFormat {
         System.out.println(str.replaceAll("\\p{L}{3}", "***"));
     }
 
+    public static void printLowerLettersOnly(String str) {
+        String result = str
+                .replaceAll("[0-9 -]", "*")
+                .replaceAll("[*]+", "/")
+                .replaceFirst("/", "")
+                .toLowerCase();
+
+        System.out.println(result);
+    }
+
 }
