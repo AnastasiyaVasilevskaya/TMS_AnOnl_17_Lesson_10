@@ -8,6 +8,7 @@ public class Main {
         DocumentNumberFormat.printTwoNumbersBlock(docNumber);
         DocumentNumberFormat.hideBlockOfLetters(docNumber);
         DocumentNumberFormat.printLowerLettersOnly(docNumber);
+        DocumentNumberFormat.printUpperLettersOnly(docNumber);
 
     }
 }

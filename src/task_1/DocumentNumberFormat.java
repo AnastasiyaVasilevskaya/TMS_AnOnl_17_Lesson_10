@@ -25,4 +25,16 @@ public class DocumentNumberFormat {
         System.out.println(result);
     }
 
+    public static void printUpperLettersOnly(String str) {
+        String formattedLetters = str
+                .replaceAll("[0-9 -]", "*")
+                .replaceAll("[*]+", "/")
+                .replaceFirst("/", "")
+                .toUpperCase();
+
+        StringBuilder result = new StringBuilder("Letters: ").append(formattedLetters);
+
+        System.out.println(result);
+    }
+
 }
