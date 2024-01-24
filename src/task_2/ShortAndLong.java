@@ -5,7 +5,7 @@ package task_2;
 //    Найти самое длинное слово в строке и вывести его на экран.
 //    Если таких слов несколько, то вывести последнее из них.
 
-public class StrLength {
+public class ShortAndLong {
     public static void shortestAndLongestWord(String str) {
         String[] words = str.split("[\\s\\p{Punct}—]+");
 
